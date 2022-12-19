@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rowma.rowmarobotapp.TBCameraActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="32dp">
+
+        <TextView
+            android:id="@+id/cameraUuid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/robotUuid" />
+
+        <Button
+            android:id="@+id/tb2_ad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tb2_ad" />
+
+        <!-- <Button
+            android:id="@+id/ANL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" /> -->
+
+        <!--
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="パスワードを入力してください"
+            android:inputType="textPersonName"
+            tools:importantForAccessibility="no" />
+
+        <Button
+            android:id="@+id/button_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pass" />
+            -->
+
+
+        <!-- <ToggleButton
+            android:id="@+id/TB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" /> -->
+
+
+        <ToggleButton
+            android:id="@+id/joinButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton" />
+
+        <us.zoom.sdk.ZoomVideoSDKVideoView
+            android:id="@+id/localVideoView"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#C33939"
+            android:backgroundTint="#CA4545"
+            android:backgroundTintMode="add"
+            app:layout_constraintStart_toStartOf="@+id/robotVideoView"
+            app:layout_constraintTop_toTopOf="@+id/robotVideoView">
+
+        </us.zoom.sdk.ZoomVideoSDKVideoView>
+
+
+        <us.zoom.sdk.ZoomVideoSDKVideoView
+            android:id="@+id/robotVideoView"
+            android:layout_width="match_parent"
+            android:layout_height="261dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/joinButton" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_weight="0.1">
+
+            <Button
+                android:id="@+id/robot_buttonA"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom|center"
+                android:text="Go" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="246dp"
+            android:layout_weight="0.3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/robot_buttonB"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Left" />
+
+            <Button
+                android:id="@+id/robot_buttonC"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Stop" />
+
+            <Button
+                android:id="@+id/robot_buttonD"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:text="Right" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_weight="0.1">
+
+            <Button
+                android:id="@+id/robot_buttonE"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center|top"
+                android:text="Back" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

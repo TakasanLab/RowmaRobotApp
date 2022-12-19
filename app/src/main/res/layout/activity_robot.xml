@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RobotActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/robotUuid"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/robotUuid"
+            android:textStyle="normal|bold" />
+
+        <!--
+        <Button
+            android:id="@+id/tb2_ad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tb2_ad" />
+
+        <Button
+            android:id="@+id/ANL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ANL" />
+
+         -->
+
+        <Button
+            android:id="@+id/LCL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Launch Commands List" />
+
+
+        <ListView
+            android:id="@+id/lcl"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+        </ListView>
+
+        <Button
+            android:id="@+id/NCL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Node Commands List" />
+
+        <ListView
+            android:id="@+id/ncl"
+            android:layout_width="match_parent"
+            android:layout_height="98dp">
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_weight="0.1">
+
+            <Button
+                android:id="@+id/robot_go"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom|center"
+                android:text="Go" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_weight="0.3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/robot_left"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Left" />
+
+            <Button
+                android:id="@+id/robot_stop"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Stop" />
+
+            <Button
+                android:id="@+id/robot_right"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:text="Right" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_weight="0.1">
+
+            <Button
+                android:id="@+id/robot_back"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center|top"
+                android:text="Back" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

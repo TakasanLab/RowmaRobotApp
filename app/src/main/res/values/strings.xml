@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Rowma Robot App</string>
+    <string name="robotUuid">選択したRobot Uuidは </string>
+    <string name="robotUuids">接続中の Robot UUID　一覧 </string>
+
+
+    <string name="button1">ロボットを呼び出す</string>
+    <string name="tb2_ad">タートルボットを自動ドッキングする</string>
+    <string name="button2">ロボットの自律走行をサポート\nロボットの初期位置とゴールを設定して自律走行を行う</string>
+    <string name="button3">ROSノードの遠隔実行</string>
+    <string name="button4">森岡研巡回カメラ</string>
+    <string name="ANL">以下のUUID一覧から操作するロボットを選択してください</string>
+    <string name="pass">十字キーにアクセス</string>
+
+
+    <string name="mode">ロボットの自律走行に関する機能を選択</string>
+</resources>
